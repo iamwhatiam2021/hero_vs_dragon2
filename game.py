@@ -22,7 +22,7 @@ while True:
     print("The dragon does", dragon_attack, "damage and the hero has", hero_hp, "hp left")
     # add an if condition to check if the hero was killed by the dragon
     # here goes the if
-    if hero_hp <=0:
+    if hero_hp <= 0:
         print("Unfortunately the dragon killed our hero. RIP sir Bravealot")
         break
 

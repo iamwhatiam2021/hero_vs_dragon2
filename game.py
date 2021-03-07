@@ -29,7 +29,7 @@ while True:
     hero_attack = random.randint(1, hero_max_dmg)
     # here you need to update the dragon hp, you need to subtract the damage that the hero did
     # add code on this line
-    dragon_hp= dragon_hp - hero_attack
+    dragon_hp = dragon_hp - hero_attack
     print("The hero does", hero_attack, "damage and the dragon has", dragon_hp, "hp left")
     # add an if condition to check if the dragon was killed by the hero
     # here goes the if

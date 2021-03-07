@@ -13,21 +13,24 @@ print("The dragon with", dragon_hp, "hp attacks out hero with", hero_hp, "hp")
 
 # add a While for an infinite block
 # here goes the while:
+while True:
     dragon_attack = random.randint(1, dragon_max_dmg)
-    # here you need to update the hero hp, you need to subtract the damage that the dragon did
+    hero_hp = hero_hp - dragon_attack
+     # here you need to update the hero hp, you need to subtract the damage that the dragon did
     # add code on this line
 
     print("The dragon does", dragon_attack, "damage and the hero has", hero_hp, "hp left")
     # add an if condition to check if the hero was killed by the dragon
     # here goes the if
+    if hero_hp <=0:
         print("Unfortunately the dragon killed our hero. RIP sir Bravealot")
         break
 
     hero_attack = random.randint(1, hero_max_dmg)
     # here you need to update the dragon hp, you need to subtract the damage that the hero did
     # add code on this line
-
-    print("The hero does", hero_attack, "damage and the dragon has", dragon_hp, "hp left")
+    if dragon_hp <= 0:
+        print("The hero does", hero_attack, "damage and the dragon has", dragon_hp, "hp left")
     # add an if condition to check if the dragon was killed by the hero
     # here goes the if
         print("Our valiant hero has slain the dragon!")
